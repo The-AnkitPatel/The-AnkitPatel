@@ -4,7 +4,6 @@
 
   <p align="center">
     <a href="https://www.nituk.ac.in/"><img src="https://img.shields.io/badge/NIT_Uttarakhand-Systems_Engineering-00E599?style=flat-square&logo=google-classroom&logoColor=black&labelColor=0D1117" alt="NITUK" /></a>
-    <a href="https://ankitpatel.online"><img src="https://img.shields.io/badge/Live_Portfolio-ankitpatel.online-38BDF8?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117" alt="Portfolio" /></a>
     <a href="https://www.linkedin.com/in/the-ankitkumarpatel/"><img src="https://img.shields.io/badge/LinkedIn-the--ankitkumarpatel-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0D1117" alt="LinkedIn" /></a>
     <a href="https://leetcode.com/u/theankitpatel/"><img src="https://img.shields.io/badge/LeetCode-theankitpatel-FFA116?style=flat-square&logo=leetcode&logoColor=black&labelColor=0D1117" alt="LeetCode" /></a>
     <a href="mailto:ankitkumarpatel357@gmail.com"><img src="https://img.shields.io/badge/Email-Direct-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" /></a>
@@ -140,12 +139,4 @@
       </td>
     </tr>
   </table>
-</div>
-
----
-
-<div align="center">
-
-  <sub>Ankit Kumar Patel • Systems Engineer & Autonomous Platforms • NIT Uttarakhand • <a href="https://ankitpatel.online">ankitpatel.online</a></sub>
-
 </div>
