@@ -1,66 +1,128 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,35,40&height=200&section=header&text=ANKIT%20KUMAR%20PATEL&fontSize=42&fontAlignY=38&desc=Systems%20Engineer%20%7C%20Distributed%20Telemetry%20%7C%20Autonomous%20AI%20Platforms&descAlignY=58&descSize=18&fontColor=ffffff" width="100%" alt="Header" />
+  <!-- DYNAMIC TWINKLING HEADER -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,35,40&height=200&section=header&text=Ankit%20Kumar%20Patel&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Systems%20Engineer%20%7C%20Distributed%20Telemetry%20%7C%20Autonomous%20AI%20Platforms&descAlignY=56&descSize=18" width="100%" alt="Header" />
 
-  <p align="center">
-    <a href="https://ankitpatel.online"><img src="https://img.shields.io/badge/Live_Portfolio-ankitpatel.online-00E599?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio" /></a>
-    <a href="https://www.linkedin.com/in/the-ankitkumarpatel/"><img src="https://img.shields.io/badge/LinkedIn-the--ankitkumarpatel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="https://leetcode.com/u/theankitpatel/"><img src="https://img.shields.io/badge/LeetCode-theankitpatel-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
-    <a href="mailto:ankitkumarpatel357@gmail.com"><img src="https://img.shields.io/badge/Direct-ankitkumarpatel357%40gmail.com-FF4B4B?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  </p>
+  <br/>
+
+  <!-- SOCIAL & METRIC BADGES -->
+  <a href="https://ankitpatel.online">
+    <img src="https://img.shields.io/badge/Live_Portfolio-ankitpatel.online-00E599?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio" />
+  </a>
+  <a href="https://www.linkedin.com/in/the-ankitkumarpatel/">
+    <img src="https://img.shields.io/badge/LinkedIn-the--ankitkumarpatel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://leetcode.com/u/theankitpatel/">
+    <img src="https://img.shields.io/badge/LeetCode-theankitpatel-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
+  </a>
+  <a href="mailto:ankitkumarpatel357@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ankitkumarpatel357%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+
+  <br/><br/>
+
+  <a href="https://github.com/The-AnkitPatel?tab=followers">
+    <img src="https://img.shields.io/github/followers/The-AnkitPatel?label=Followers&style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117&color=00E599" alt="Followers" />
+  </a>
+  <img src="https://komarev.com/ghpvc/?username=The-AnkitPatel&style=for-the-badge&color=00E599&labelColor=0D1117" alt="Profile Views" />
+  <img src="https://img.shields.io/badge/Status-Building_High--Impact_Systems-38BDF8?style=for-the-badge&labelColor=0D1117" alt="Status" />
 
 </div>
 
-```
-╭─ [ankit@mainframe] ~ [x86_64 / Linux 6.8]
-╰─❯ sysinfo --profile
-    • Identity        : Ankit Kumar Patel
-    • Primary Domain  : Autonomous Agent Runtimes • Predictive Telemetry • High-Throughput Backends
-    • Core Languages  : Python 3.12, C++20, TypeScript, Go, SQL, Bash
-    • Telemetry & ML  : LightGBM, TreeSHAP, Conformal Prediction, Isotonic Calibration
-    • Backend & Data  : FastAPI, Docker, Redis, Celery, PostgreSQL, Supabase RLS, Linux Sockets
-    • Problem Solving : LeetCode [theankitpatel] • Algorithmic Optimization
-    • Architecture    : Deterministic Execution • Zero-Downtime Infrastructure
+<br/>
+
+<!-- ABOUT ME CODE BLOCK -->
+## 🧑‍💻 About Me
+
+```python
+class AnkitKumarPatel:
+    def __init__(self):
+        self.role = "Systems Engineer & Autonomous AI Architect"
+        self.location = "India"
+        self.portfolio = "https://ankitpatel.online"
+        self.core_domains = [
+            "Predictive Network Telemetry",
+            "High-Throughput Distributed Backends",
+            "Autonomous Coding Agents & LLM Runtimes"
+        ]
+
+    @property
+    def technical_stack(self):
+        return {
+            "languages": ["Python 3.12", "C++20", "TypeScript", "Go", "SQL", "Bash"],
+            "telemetry_ml": ["LightGBM", "TreeSHAP", "Conformal Prediction", "Isotonic Calibration"],
+            "backend_infra": ["FastAPI", "Docker", "Redis", "Celery", "PostgreSQL", "Supabase RLS"],
+            "frontend_ui": ["React 19", "Tailwind CSS", "Vite", "Chart.js", "Recharts"]
+        }
+
+    @property
+    def engineering_philosophy(self):
+        return "Deterministic Execution • Zero-Downtime Infrastructure • Low-Latency Telemetry"
 ```
 
 ---
 
-### ⚡ Selected Engineering Systems
+<!-- CONTRIBUTION GRAPH SNAKE -->
+<div align="center">
 
-```
-01. [PRODUCTION] NetPredict — Autonomous Network Telemetry Intelligence
-    ├── Cockpit : https://netpredict-cockpit.vercel.app
-    ├── Docs    : https://netpredict-docs.vercel.app/docs
-    └── Overview:
-        • Predictive link-failure & congestion engine forecasting 5m, 15m, 30m horizons prior to packet drops.
-        • Explainable risk attribution via TreeSHAP feature importance combined with Conformal Prediction intervals.
-        • Dual ingestion engine: real-time OS socket polling paired with zero-overhead browser simulation.
-        • Stack: Python 3.12, FastAPI, React 19, TypeScript 5.6, LightGBM, Docker, TreeSHAP.
-```
+## 🐍 Contribution Graph
 
-```
-02. [CLI / AGENTS] Agav — Terminal-Native Autonomous AI Coding Agent
-    ├── Engine  : https://agav.dev
-    ├── Manual  : https://docs.agav.dev
-    └── Overview:
-        • Autonomous coding CLI operating directly on multi-file codebases with LSP AST parsing and patch validation.
-        • Multi-provider LLM orchestration supporting Anthropic, OpenAI, OpenRouter, and local-first Ollama models.
-        • Evaluated on Terminal-Bench 2.1 (84.7%) and SWE-bench Live for autonomous software task resolution.
-        • Stack: Python, TypeScript, Linux PTY, Docker Sandboxing, JSON Schema Validation.
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" />
+</picture>
 
-```
-03. [DISTRIBUTED] HimRide — Mission-Critical Transit & Fleet Logistics
-    └── Overview:
-        • Multi-tier state transit booking and fleet dispatch coordination infrastructure.
-        • High-concurrency seat allocation engine backed by PostgreSQL transactional locks preventing oversell races.
-        • Real-time operator dashboard with low-latency route telematics and offline-resilient local sync.
-        • Stack: FastAPI, TypeScript, React, PostgreSQL, Supabase RLS, Tailwind CSS.
-```
+</div>
 
 ---
 
-### 🛠️ Tech Stack & Toolchain
+<!-- FLAGSHIP SYSTEMS -->
+## 🚀 Featured Engineering Systems
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="left">⚡ NetPredict — Autonomous Network Telemetry Intelligence</h3>
+      <p><b>Predictive Congestion & Link Failure Forecaster (<a href="https://netpredict-cockpit.vercel.app">Live Cockpit</a> • <a href="https://netpredict-docs.vercel.app/docs">Docs Portal</a>)</b></p>
+      <ul>
+        <li>Predicts link congestion and buffer overflow <b>5m, 15m, and 30m in advance</b> before packet loss impacts throughput.</li>
+        <li><b>Root-Cause Explainability:</b> Evaluates queue buildup and latency slopes using <b>TreeSHAP</b> feature attribution with Conformal Prediction uncertainty intervals.</li>
+        <li><b>Dual Ingestion Engine:</b> Live hardware socket counter polling paired with zero-overhead browser simulation.</li>
+        <li>Interactive <i>"What-If"</i> simulation lab allowing operators to test rerouting and buffer adjustments with live feedback.</li>
+      </ul>
+      <p><code>Python 3.12</code> • <code>FastAPI</code> • <code>React 19</code> • <code>TypeScript</code> • <code>LightGBM</code> • <code>TreeSHAP</code> • <code>Docker</code></p>
+    </td>
+    <td width="50%">
+      <h3 align="left">🤖 Agav — Terminal-Native Autonomous AI Agent</h3>
+      <p><b>CLI Coding Assistant for Real Repositories (<a href="https://agav.dev">agav.dev</a> • <a href="https://docs.agav.dev">Documentation</a>)</b></p>
+      <ul>
+        <li>Terminal-native agent engineered to inspect, refactor, and test multi-file codebases directly from the CLI.</li>
+        <li><b>Multi-Provider Engine:</b> Swappable LLM orchestration supporting Anthropic, OpenAI, OpenRouter, Gemini, and local-first Ollama models with mid-session switching.</li>
+        <li>Evaluated on competitive benchmarks including <b>Terminal-Bench 2.1 (84.7%)</b> and SWE-bench Live.</li>
+        <li>Sandboxed command execution, automated git branching, AST inspection, and non-interactive CI/CD mode.</li>
+      </ul>
+      <p><code>Python</code> • <code>TypeScript</code> • <code>Linux PTY</code> • <code>Docker</code> • <code>AST Parsing</code> • <code>LLM Tooling</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" colspan="2">
+      <h3 align="left">🏔️ HimRide — Mission-Critical Transit & Fleet Logistics</h3>
+      <p><b>Production High-Concurrency Booking & Dispatch Infrastructure</b></p>
+      <ul>
+        <li>Production multi-tier state transit booking platform coordinating routes, passenger seat reservations, and fleet telematics.</li>
+        <li>Engineered low-latency seat matrix allocation with transactional ACID integrity to prevent race conditions during peak travel demand.</li>
+        <li>Integrated role-based operator cockpits with real-time transit telematics, automated receipt generation, and offline-resilient local sync.</li>
+      </ul>
+      <p><code>FastAPI</code> • <code>TypeScript</code> • <code>React</code> • <code>PostgreSQL</code> • <code>Supabase RLS</code> • <code>Docker Compose</code> • <code>Tailwind CSS</code></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+<!-- TECH STACK -->
+## 🛠️ Toolchain & Ecosystem
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -70,21 +132,45 @@
 
 ---
 
-### 📈 Activity & Metrics
+<!-- GITHUB ANALYTICS -->
+## 📊 Analytics & Engineering Activity
 
 <div align="center">
+  <table border="0" width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=The-AnkitPatel&show_icons=true&include_all_commits=true&count_private=true&theme=transparent&hide_border=true&title_color=00E599&text_color=94A3B8&icon_color=00E599" width="100%" alt="GitHub Stats" />
+      </td>
+      <td width="50%" align="center">
+        <img src="https://github-readme-streak-stats.herokuapp.com/?user=The-AnkitPatel&theme=transparent&mode=weekly&timezone=Asia/Kolkata&hide_border=true&stroke=00E599&ring=00E599&fire=00E599&currStreakLabel=00E599" width="100%" alt="Streak" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=The-AnkitPatel&layout=compact&card_width=800&theme=transparent&hide_border=true&title_color=00E599&text_color=94A3B8" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+</div>
 
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=The-AnkitPatel&show_icons=true&include_all_commits=true&count_private=true&theme=transparent&hide_border=true&title_color=00E599&text_color=94A3B8&icon_color=00E599" width="48%" alt="Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=The-AnkitPatel&theme=transparent&mode=weekly&timezone=Asia/Kolkata&hide_border=true&stroke=00E599&ring=00E599&fire=00E599&currStreakLabel=00E599" width="48%" alt="Streak" />
+---
 
-  <br />
+<!-- DEV QUOTE -->
+<div align="center">
 
-  <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=The-AnkitPatel&layout=compact&card_width=800&theme=transparent&hide_border=true&title_color=00E599&text_color=94A3B8" alt="Languages" />
+### 💡 Developer Insight
+
+![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
 
 </div>
 
 ---
 
+<!-- FOOTER -->
 <div align="center">
-  <sub>Ankit Kumar Patel • Autonomous Systems & Predictive Architecture • <a href="https://ankitpatel.online">ankitpatel.online</a></sub>
+
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,35,40&height=100&section=footer" width="100%" alt="Footer" />
+
+  <sub>Ankit Kumar Patel • Systems Engineer & Autonomous AI Platforms • <a href="https://ankitpatel.online">ankitpatel.online</a></sub>
+
 </div>
