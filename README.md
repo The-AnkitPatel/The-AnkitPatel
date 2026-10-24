@@ -1,98 +1,63 @@
 <div align="center">
 
-  <!-- DYNAMIC TWINKLING HEADER -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,35,40&height=200&section=header&text=Ankit%20Kumar%20Patel&fontSize=42&fontColor=ffffff&animation=twinkling&fontAlignY=36&desc=Systems%20Engineer%20%7C%20Distributed%20Telemetry%20%7C%20Autonomous%20AI%20Platforms&descAlignY=56&descSize=18" width="100%" alt="Header" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0D1117&height=180&section=header&text=ANKIT%20KUMAR%20PATEL&fontSize=38&fontColor=00E599&fontAlignY=38&desc=Systems%20Engineer%20%E2%80%A2%20Predictive%20Telemetry%20%E2%80%A2%20Autonomous%20AI%20Platforms&descAlignY=58&descSize=16&descColor=94A3B8" width="100%" alt="Header" />
 
-  <br/>
-
-  <!-- SOCIAL & METRIC BADGES -->
-  <a href="https://ankitpatel.online">
-    <img src="https://img.shields.io/badge/Live_Portfolio-ankitpatel.online-00E599?style=for-the-badge&logo=vercel&logoColor=black" alt="Portfolio" />
-  </a>
-  <a href="https://www.linkedin.com/in/the-ankitkumarpatel/">
-    <img src="https://img.shields.io/badge/LinkedIn-the--ankitkumarpatel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="https://leetcode.com/u/theankitpatel/">
-    <img src="https://img.shields.io/badge/LeetCode-theankitpatel-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
-  </a>
-  <a href="mailto:ankitkumarpatel357@gmail.com">
-    <img src="https://img.shields.io/badge/Email-ankitkumarpatel357%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-
-  <br/><br/>
-
-  <a href="https://github.com/The-AnkitPatel?tab=followers">
-    <img src="https://img.shields.io/github/followers/The-AnkitPatel?label=Followers&style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117&color=00E599" alt="Followers" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=The-AnkitPatel&style=for-the-badge&color=00E599&labelColor=0D1117" alt="Profile Views" />
-  <img src="https://img.shields.io/badge/Status-Building_High--Impact_Systems-38BDF8?style=for-the-badge&labelColor=0D1117" alt="Status" />
+  <p align="center">
+    <a href="https://www.nituk.ac.in/"><img src="https://img.shields.io/badge/NIT_Uttarakhand-Systems_Engineering-00E599?style=flat-square&logo=google-classroom&logoColor=black&labelColor=0D1117" alt="NITUK" /></a>
+    <a href="https://ankitpatel.online"><img src="https://img.shields.io/badge/Live_Portfolio-ankitpatel.online-38BDF8?style=flat-square&logo=vercel&logoColor=white&labelColor=0D1117" alt="Portfolio" /></a>
+    <a href="https://www.linkedin.com/in/the-ankitkumarpatel/"><img src="https://img.shields.io/badge/LinkedIn-the--ankitkumarpatel-0A66C2?style=flat-square&logo=linkedin&logoColor=white&labelColor=0D1117" alt="LinkedIn" /></a>
+    <a href="https://leetcode.com/u/theankitpatel/"><img src="https://img.shields.io/badge/LeetCode-theankitpatel-FFA116?style=flat-square&logo=leetcode&logoColor=black&labelColor=0D1117" alt="LeetCode" /></a>
+    <a href="mailto:ankitkumarpatel357@gmail.com"><img src="https://img.shields.io/badge/Email-Direct-EA4335?style=flat-square&logo=gmail&logoColor=white&labelColor=0D1117" alt="Email" /></a>
+    <img src="https://komarev.com/ghpvc/?username=The-AnkitPatel&style=flat-square&color=00E599&labelColor=0D1117" alt="Views" />
+  </p>
 
 </div>
 
-<br/>
-
-<!-- ABOUT ME CODE BLOCK -->
-## 🧑‍💻 About Me
-
-```python
-class AnkitKumarPatel:
-    def __init__(self):
-        self.role = "Systems Engineer & Autonomous AI Architect"
-        self.location = "India"
-        self.portfolio = "https://ankitpatel.online"
-        self.core_domains = [
-            "Predictive Network Telemetry",
-            "High-Throughput Distributed Backends",
-            "Autonomous Coding Agents & LLM Runtimes"
-        ]
-
-    @property
-    def technical_stack(self):
-        return {
-            "languages": ["Python 3.12", "C++20", "TypeScript", "Go", "SQL", "Bash"],
-            "telemetry_ml": ["LightGBM", "TreeSHAP", "Conformal Prediction", "Isotonic Calibration"],
-            "backend_infra": ["FastAPI", "Docker", "Redis", "Celery", "PostgreSQL", "Supabase RLS"],
-            "frontend_ui": ["React 19", "Tailwind CSS", "Vite", "Chart.js", "Recharts"]
-        }
-
-    @property
-    def engineering_philosophy(self):
-        return "Deterministic Execution • Zero-Downtime Infrastructure • Low-Latency Telemetry"
-```
-
 ---
 
-<!-- CONTRIBUTION GRAPH SNAKE -->
+### 🏛️ Engineering Cockpit & Blueprint
+
 <div align="center">
 
-## 🐍 Contribution Graph
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake.svg" />
-  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" />
-</picture>
+| Operational Domain | Technical Focus & Systems Depth |
+| :--- | :--- |
+| **Distributed Telemetry & Prediction** | Multi-horizon early-warning failure forecasting (5m, 15m, 30m), TreeSHAP feature attributions, Isotonic Calibration, Conformal Prediction. |
+| **Autonomous Agent Runtimes** | Terminal-native code editing engines, LSP AST parsing, multi-provider LLM orchestration (Anthropic, OpenAI, OpenRouter, Gemini, Ollama), sandboxed CI/CD. |
+| **High-Throughput Backends** | Transactional ACID seat/gatepass allocation engines, PostgreSQL row-level locks (RLS), POSIX sockets, Redis caching, Celery queues, FastAPI. |
+| **Mission-Critical Client Systems** | React 19, TypeScript, responsive incident-response cockpits, low-latency live telemetry streams, offline-resilient local sync. |
 
 </div>
 
 ---
 
-<!-- FLAGSHIP SYSTEMS -->
-## 🚀 Featured Engineering Systems
+### 🚀 Production Flagship Systems
 
 <table>
   <tr>
     <td width="50%">
-      <h3 align="left">⚡ NetPredict — Autonomous Network Telemetry Intelligence</h3>
-      <p><b>Predictive Congestion & Link Failure Forecaster (<a href="https://netpredict-cockpit.vercel.app">Live Cockpit</a> • <a href="https://netpredict-docs.vercel.app/docs">Docs Portal</a>)</b></p>
+      <h3 align="left">🏢 LeaveDesk — NIT Uttarakhand Campus Gatepass & Security Engine</h3>
+      <p><b>Production Institution Platform (<a href="https://github.com/The-AnkitPatel/hostel-leave-manager">hostel-leave-manager</a>)</b></p>
       <ul>
-        <li>Predicts link congestion and buffer overflow <b>5m, 15m, and 30m in advance</b> before packet loss impacts throughput.</li>
+        <li>Engineered end-to-end leave management and campus perimeter security platform for <b>NIT Uttarakhand</b>.</li>
+        <li><b>Multi-Tier Authorization:</b> Multi-level approval pipeline orchestrating state flow across Students &rarr; Faculty Advisors &rarr; Wardens.</li>
+        <li><b>Dynamic Verification:</b> Cryptographic QR-code validation for physical security checkpoints with anti-replay timestamp verification.</li>
+        <li>Automated instant guardian/warden email notifications, dynamic PDF leave pass compilation, and institutional analytics.</li>
+      </ul>
+      <p><code>PostgreSQL 17</code> • <code>Supabase RLS</code> • <code>TypeScript</code> • <code>React</code> • <code>Tailwind CSS</code> • <code>Vercel</code></p>
+    </td>
+    <td width="50%">
+      <h3 align="left">⚡ NetPredict — Autonomous Network Telemetry Intelligence</h3>
+      <p><b>Congestion & Link Failure Forecaster (<a href="https://netpredict-cockpit.vercel.app">Live Cockpit</a> • <a href="https://netpredict-docs.vercel.app/docs">Docs Portal</a>)</b></p>
+      <ul>
+        <li>Predicts network link congestion and buffer overflow <b>5m, 15m, and 30m in advance</b> before packet loss impacts throughput.</li>
         <li><b>Root-Cause Explainability:</b> Evaluates queue buildup and latency slopes using <b>TreeSHAP</b> feature attribution with Conformal Prediction uncertainty intervals.</li>
         <li><b>Dual Ingestion Engine:</b> Live hardware socket counter polling paired with zero-overhead browser simulation.</li>
         <li>Interactive <i>"What-If"</i> simulation lab allowing operators to test rerouting and buffer adjustments with live feedback.</li>
       </ul>
       <p><code>Python 3.12</code> • <code>FastAPI</code> • <code>React 19</code> • <code>TypeScript</code> • <code>LightGBM</code> • <code>TreeSHAP</code> • <code>Docker</code></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%">
       <h3 align="left">🤖 Agav — Terminal-Native Autonomous AI Agent</h3>
       <p><b>CLI Coding Assistant for Real Repositories (<a href="https://agav.dev">agav.dev</a> • <a href="https://docs.agav.dev">Documentation</a>)</b></p>
@@ -104,11 +69,9 @@ class AnkitKumarPatel:
       </ul>
       <p><code>Python</code> • <code>TypeScript</code> • <code>Linux PTY</code> • <code>Docker</code> • <code>AST Parsing</code> • <code>LLM Tooling</code></p>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" colspan="2">
-      <h3 align="left">🏔️ HimRide — Mission-Critical Transit & Fleet Logistics</h3>
-      <p><b>Production High-Concurrency Booking & Dispatch Infrastructure</b></p>
+    <td width="50%">
+      <h3 align="left">🏔️ HimRide — State Transit Scheduling & Fleet Logistics</h3>
+      <p><b>High-Concurrency Booking & Dispatch Infrastructure</b></p>
       <ul>
         <li>Production multi-tier state transit booking platform coordinating routes, passenger seat reservations, and fleet telematics.</li>
         <li>Engineered low-latency seat matrix allocation with transactional ACID integrity to prevent race conditions during peak travel demand.</li>
@@ -121,8 +84,35 @@ class AnkitKumarPatel:
 
 ---
 
-<!-- TECH STACK -->
-## 🛠️ Toolchain & Ecosystem
+### 🐍 Real-Time Contribution Telemetry
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://raw.githubusercontent.com/The-AnkitPatel/The-AnkitPatel/output/snake-dark.svg" width="100%" />
+</picture>
+
+</div>
+
+---
+
+### 🛠️ Technical Arsenal
+
+<div align="center">
+
+| Core Infrastructure | Verified Technologies |
+| :--- | :--- |
+| **Languages** | `C++20` `Python 3.12` `TypeScript` `JavaScript` `Go` `SQL` `Bash` |
+| **Telemetry & Predictive ML** | `LightGBM` `TreeSHAP` `Isotonic Calibration` `Conformal Prediction` `Vector DBs` `PyTorch` `Pandas` |
+| **Backend & Cloud Architecture** | `FastAPI` `Node.js` `PostgreSQL 17` `Supabase RLS` `Redis` `Celery` `Docker` `Docker Compose` |
+| **Frontend & Cockpit Systems** | `React 19` `Tailwind CSS` `Next.js` `Vite` `Chart.js` `Recharts` `Responsive UI/UX` |
+| **DevOps & Developer Tooling** | `Git` `GitHub Actions CI/CD` `Linux Internals` `POSIX Sockets` `GDB` `strace` `Playwright` |
+
+</div>
+
+<br/>
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -132,8 +122,7 @@ class AnkitKumarPatel:
 
 ---
 
-<!-- GITHUB ANALYTICS -->
-## 📊 Analytics & Engineering Activity
+### 📊 GitHub Activity Analytics
 
 <div align="center">
   <table border="0" width="100%">
@@ -155,22 +144,8 @@ class AnkitKumarPatel:
 
 ---
 
-<!-- DEV QUOTE -->
 <div align="center">
 
-### 💡 Developer Insight
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
-
-</div>
-
----
-
-<!-- FOOTER -->
-<div align="center">
-
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,24,35,40&height=100&section=footer" width="100%" alt="Footer" />
-
-  <sub>Ankit Kumar Patel • Systems Engineer & Autonomous AI Platforms • <a href="https://ankitpatel.online">ankitpatel.online</a></sub>
+  <sub>Ankit Kumar Patel • Systems Engineer & Autonomous Platforms • NIT Uttarakhand • <a href="https://ankitpatel.online">ankitpatel.online</a></sub>
 
 </div>
