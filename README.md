@@ -140,3 +140,5 @@
     </tr>
   </table>
 </div>
+
+<!-- telemetry sync 2026 -->
