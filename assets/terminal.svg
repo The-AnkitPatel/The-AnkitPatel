@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" font-family="'JetBrains Mono','SF Mono',ui-monospace,Consolas,monospace" role="img" aria-label="ankit@systems — neofetch">
+  <defs>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0C121A"/>
+      <stop offset="1" stop-color="#090D13"/>
+    </linearGradient>
+    <filter id="nglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <!-- window -->
+  <rect x="2" y="2" width="1196" height="396" rx="12" fill="url(#win)" stroke="#1C2938"/>
+  <!-- title bar -->
+  <path d="M2 14a12 12 0 0 1 12-12h1172a12 12 0 0 1 12 12v26H2z" fill="#0E151F"/>
+  <line x1="2" y1="40" x2="1198" y2="40" stroke="#1C2938"/>
+  <circle cx="26" cy="21" r="6" fill="#FB7185"/>
+  <circle cx="48" cy="21" r="6" fill="#FBBF24"/>
+  <circle cx="70" cy="21" r="6" fill="#00E599"/>
+  <text x="600" y="26" text-anchor="middle" fill="#5B6B7E" font-size="13">ankit@systems: ~/engineering</text>
+  <text x="1170" y="26" text-anchor="end" fill="#39465A" font-size="12">zsh</text>
+
+  <!-- ===== left: service mesh graph ===== -->
+  <g stroke-linecap="round">
+    <!-- edges -->
+    <g stroke="#1C4A3C" stroke-width="1.6">
+      <line x1="96" y1="120" x2="180" y2="170"/>
+      <line x1="240" y1="96" x2="180" y2="170"/>
+      <line x1="320" y1="180" x2="180" y2="170"/>
+      <line x1="110" y1="224" x2="180" y2="170"/>
+      <line x1="250" y1="252" x2="180" y2="170"/>
+      <line x1="96" y1="120" x2="240" y2="96"/>
+      <line x1="110" y1="224" x2="250" y2="252"/>
+      <line x1="320" y1="180" x2="250" y2="252"/>
+    </g>
+    <!-- traveling pulses -->
+    <circle r="3.2" fill="#00E599"><animateMotion dur="2.4s" repeatCount="indefinite" path="M96,120 L180,170 L320,180"/></circle>
+    <circle r="3.2" fill="#38BDF8"><animateMotion dur="2.8s" begin="0.6s" repeatCount="indefinite" path="M240,96 L180,170 L250,252"/></circle>
+    <circle r="2.6" fill="#FBBF24"><animateMotion dur="3.2s" begin="1.2s" repeatCount="indefinite" path="M110,224 L180,170 L96,120"/></circle>
+  </g>
+  <!-- nodes -->
+  <g font-size="10" fill="#6E7F93" text-anchor="middle">
+    <g><circle cx="96" cy="120" r="7" fill="#0C1620" stroke="#00E599" stroke-width="1.6"/><text x="96" y="104">api</text></g>
+    <g><circle cx="240" cy="96" r="7" fill="#0C1620" stroke="#38BDF8" stroke-width="1.6"/><text x="240" y="80">edge</text></g>
+    <g><circle cx="320" cy="180" r="7" fill="#0C1620" stroke="#00E599" stroke-width="1.6"/><text x="320" y="202">otel</text></g>
+    <g><circle cx="110" cy="224" r="7" fill="#0C1620" stroke="#F472B6" stroke-width="1.6"/><text x="110" y="246">cache</text></g>
+    <g><circle cx="250" cy="252" r="7" fill="#0C1620" stroke="#FBBF24" stroke-width="1.6"/><text x="250" y="274">db</text></g>
+    <circle cx="180" cy="170" r="11" fill="#0E2119" stroke="#00E599" stroke-width="2" filter="url(#nglow)"/>
+    <circle cx="180" cy="170" r="11" fill="none" stroke="#00E599" stroke-width="1.5"><animate attributeName="r" dur="2.2s" repeatCount="indefinite" values="11;20;11"/><animate attributeName="opacity" dur="2.2s" repeatCount="indefinite" values="0.6;0;0.6"/></circle>
+    <text x="180" y="196" fill="#00E599">mesh</text>
+  </g>
+  <text x="200" y="320" text-anchor="middle" fill="#39465A" font-size="11" letter-spacing="1">service.graph · 6 nodes · healthy</text>
+
+  <!-- ===== right: neofetch info ===== -->
+  <text x="392" y="84" fill="#00E599" font-size="17" font-weight="700">ankit<tspan fill="#4A5A6E">@</tspan>systems</text>
+  <line x1="392" y1="96" x2="520" y2="96" stroke="#24E39A" stroke-opacity="0.35"/>
+  <g font-size="15">
+    <text x="392" y="126" xml:space="preserve"><tspan fill="#00E599">Role      </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">Systems Engineer · Distributed Backends</tspan></text>
+    <text x="392" y="154" xml:space="preserve"><tspan fill="#00E599">Focus     </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">Predictive Telemetry · Observability · SRE</tspan></text>
+    <text x="392" y="182" xml:space="preserve"><tspan fill="#00E599">Upstream  </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">CNCF OpenTelemetry · Layer5 / Meshery</tspan></text>
+    <text x="392" y="210" xml:space="preserve"><tspan fill="#00E599">Langs     </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">Go · C++20 · Python · TypeScript · SQL</tspan></text>
+    <text x="392" y="238" xml:space="preserve"><tspan fill="#00E599">Runtime   </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">PostgreSQL · Redis · Docker · FastAPI · NestJS</tspan></text>
+    <text x="392" y="266" xml:space="preserve"><tspan fill="#00E599">Edu       </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">NIT Uttarakhand — Systems Engineering</tspan></text>
+    <text x="392" y="294" xml:space="preserve"><tspan fill="#00E599">Flagship  </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#C7D6E6">LeaveDesk · NetPredict · Agav · HimRide</tspan></text>
+    <text x="392" y="322" xml:space="preserve"><tspan fill="#00E599">Status    </tspan><tspan fill="#4A5A6E">: </tspan><tspan fill="#FBBF24">forecasting failures 5m/15m/30m ahead @ 0.14ms</tspan></text>
+  </g>
+
+  <!-- prompt -->
+  <text x="392" y="356" xml:space="preserve" font-size="15"><tspan fill="#00E599">ankit@systems</tspan><tspan fill="#4A5A6E"> ~ </tspan><tspan fill="#38BDF8">$</tspan></text>
+  <rect x="520" y="344" width="10" height="17" fill="#00E599"><animate attributeName="opacity" dur="1.1s" repeatCount="indefinite" values="1;1;0;0" keyTimes="0;0.5;0.5;1"/></rect>
+
+  <!-- neofetch palette -->
+  <g>
+    <rect x="392" y="374" width="16" height="14" rx="2" fill="#FB7185"/>
+    <rect x="412" y="374" width="16" height="14" rx="2" fill="#FBBF24"/>
+    <rect x="432" y="374" width="16" height="14" rx="2" fill="#00E599"/>
+    <rect x="452" y="374" width="16" height="14" rx="2" fill="#38BDF8"/>
+    <rect x="472" y="374" width="16" height="14" rx="2" fill="#818CF8"/>
+    <rect x="492" y="374" width="16" height="14" rx="2" fill="#F472B6"/>
+    <rect x="512" y="374" width="16" height="14" rx="2" fill="#C7D6E6"/>
+    <rect x="532" y="374" width="16" height="14" rx="2" fill="#44566A"/>
+  </g>
+</svg>
