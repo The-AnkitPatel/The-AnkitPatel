@@ -19,7 +19,9 @@
   <img src="https://komarev.com/ghpvc/?username=The-AnkitPatel&style=flat-square&color=00E599&labelColor=0A0E14&label=TRACE+HITS" alt="Views" />
 </p>
 
-<br/>
+<a href="https://the-ankitpatel.github.io/The-AnkitPatel/"><img src="https://img.shields.io/badge/▶%20%20ENTER%20THE%20LIVE%20COCKPIT-the--ankitpatel.github.io-00E599?style=for-the-badge&labelColor=0A0E14&logoColor=black" alt="Live Portfolio" /></a>
+
+<br/><br/>
 
 <img src="assets/terminal.svg" width="100%" alt="ankit@systems — neofetch" />
 
