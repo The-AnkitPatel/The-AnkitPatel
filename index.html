@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ankit Kumar Patel — Systems Engineer</title>
+<meta name="description" content="Ankit Kumar Patel — Systems Engineer. Distributed telemetry, high-throughput backends, and upstream CNCF / OpenTelemetry contributions." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#060a10; --bg2:#04070b; --panel:#0c131b; --panel2:#0e1722; --line:#1b2634; --line2:#243243;
+    --green:#00E599; --cyan:#38BDF8; --amber:#FBBF24; --magenta:#F472B6; --indigo:#818CF8; --red:#FB7185;
+    --text:#e6edf3; --muted:#93a4b8; --dim:#5b6b7e;
+    --mono:'JetBrains Mono',ui-monospace,Consolas,monospace;
+    --disp:'Space Grotesk',sans-serif; --body:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(0,229,153,.3)}
+  #bg{position:fixed;inset:0;z-index:0;opacity:.55}
+  .vignette{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(120% 90% at 50% -10%,transparent 40%,rgba(2,5,9,.75) 100%)}
+  main,nav{position:relative;z-index:2}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(10px);background:rgba(6,10,16,.72);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .brand{font-family:var(--mono);font-weight:700;font-size:15px;letter-spacing:.5px}
+  .brand .g{color:var(--green)} .brand .d{color:var(--dim)}
+  .nav-links{display:flex;gap:26px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .nav-links a{position:relative;transition:color .2s}
+  .nav-links a:hover{color:var(--green)}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--green);transition:width .25s}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{font-family:var(--mono);font-size:13px;border:1px solid var(--green);color:var(--green);padding:8px 16px;border-radius:8px;transition:.2s}
+  .nav-cta:hover{background:var(--green);color:#041014;box-shadow:0 0 24px rgba(0,229,153,.4)}
+  @media(max-width:760px){.nav-links{display:none}}
+
+  /* hero */
+  .hero{padding:72px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;min-height:calc(100vh - 62px)}
+  .status{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:12px;color:var(--green);letter-spacing:1px;border:1px solid var(--line2);background:rgba(0,229,153,.05);padding:6px 13px;border-radius:30px}
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(0,229,153,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(0,229,153,.5)}70%{box-shadow:0 0 0 10px rgba(0,229,153,0)}100%{box-shadow:0 0 0 0 rgba(0,229,153,0)}}
+  h1.name{font-family:var(--disp);font-weight:700;font-size:clamp(40px,6.4vw,76px);line-height:1.02;letter-spacing:-1.5px;margin:20px 0 10px}
+  h1.name .grad{background:linear-gradient(100deg,var(--green),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .role{font-family:var(--mono);font-size:clamp(16px,2.3vw,22px);color:var(--muted);min-height:1.4em}
+  .role .tw{color:var(--green)} .cursor{display:inline-block;width:10px;height:1.05em;background:var(--green);vertical-align:-2px;margin-left:3px;animation:blink 1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+  .lede{max-width:540px;color:var(--muted);font-size:16.5px;margin:20px 0 26px}
+  .lede b{color:var(--text);font-weight:600}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+  .btn{font-family:var(--mono);font-size:13.5px;font-weight:600;padding:12px 20px;border-radius:10px;border:1px solid var(--line2);color:var(--text);transition:.22s;display:inline-flex;align-items:center;gap:8px}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:var(--green);color:#041014;border-color:var(--green)}
+  .btn.primary:hover{box-shadow:0 10px 30px rgba(0,229,153,.35)}
+  .btn.ghost:hover{border-color:var(--cyan);color:var(--cyan);box-shadow:0 10px 30px rgba(56,189,248,.18)}
+  .mini{display:flex;flex-wrap:wrap;gap:8px;font-family:var(--mono);font-size:12px}
+  .chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line2);background:var(--panel);padding:6px 12px;border-radius:30px;color:var(--muted)}
+  .chip i{width:6px;height:6px;border-radius:50%}
+
+  /* hero terminal */
+  .term{background:linear-gradient(180deg,var(--panel),#070c12);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px -30px rgba(0,0,0,.8)}
+  .term-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;border-bottom:1px solid var(--line);background:#0b121a}
+  .tb{width:11px;height:11px;border-radius:50%}
+  .term-bar span{margin-left:auto;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+  .term-body{padding:16px 18px;font-family:var(--mono);font-size:13px;line-height:1.85}
+  .term-body .k{color:var(--green)} .term-body .v{color:var(--text)} .term-body .c{color:var(--dim)} .term-body .cy{color:var(--cyan)} .term-body .am{color:var(--amber)}
+  .wf{margin-top:12px;border-top:1px dashed var(--line);padding-top:12px}
+  .wf-row{display:grid;grid-template-columns:92px 1fr;align-items:center;gap:10px;margin:7px 0;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+  .track{height:8px;background:#111a24;border-radius:4px;overflow:hidden;position:relative}
+  .bar{height:100%;border-radius:4px;width:0;animation:grow 4s ease-in-out infinite}
+  @keyframes grow{0%{width:0}12%{width:var(--w)}88%{width:var(--w)}100%{width:0}}
+
+  /* sections */
+  section{padding:84px 0;border-top:1px solid rgba(27,38,52,.6)}
+  .kicker{font-family:var(--mono);font-size:13px;color:var(--green);letter-spacing:2px;display:flex;align-items:center;gap:12px;margin-bottom:14px}
+  .kicker::before{content:"";width:30px;height:1px;background:var(--green)}
+  h2{font-family:var(--disp);font-weight:700;font-size:clamp(28px,4vw,42px);letter-spacing:-.5px;margin:0 0 14px}
+  .sub{color:var(--muted);max-width:640px;font-size:16px;margin-bottom:40px}
+  .sub b{color:var(--text)}
+
+  /* impact counters */
+  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px 18px;text-align:center;position:relative;overflow:hidden;transition:.25s}
+  .kpi:hover{transform:translateY(-4px);border-color:var(--line2)}
+  .kpi .n{font-family:var(--disp);font-weight:700;font-size:34px;line-height:1}
+  .kpi .l{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.6px;margin-top:9px;text-transform:uppercase}
+  .kpi .u{position:absolute;left:0;bottom:0;height:3px;width:100%;opacity:.5}
+  @media(max-width:900px){.kpis{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:520px){.kpis{grid-template-columns:repeat(2,1fr)}}
+
+  /* upstream cards */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:860px){.grid2{grid-template-columns:1fr}}
+  .ucard{background:linear-gradient(180deg,var(--panel),#080d13);border:1px solid var(--line);border-radius:16px;padding:24px;position:relative;transition:.28s;overflow:hidden}
+  .ucard::before{content:"";position:absolute;left:0;top:0;height:100%;width:3px;background:var(--acc)}
+  .ucard:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 24px 60px -30px var(--acc)}
+  .ucard .org{font-family:var(--mono);font-size:11px;letter-spacing:1px;color:var(--acc);text-transform:uppercase}
+  .ucard .repo{font-family:var(--mono);font-size:19px;font-weight:700;margin:8px 0 6px;color:var(--text);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .ucard p{color:var(--muted);font-size:14.5px;margin:10px 0 18px}
+  .prs{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .pr{font-family:var(--mono);font-size:12px;border:1px solid var(--line2);padding:6px 11px;border-radius:8px;color:var(--text);transition:.2s;display:inline-flex;gap:6px;align-items:center}
+  .pr:hover{border-color:var(--acc);color:var(--acc);transform:translateY(-2px)}
+  .pill{margin-left:auto;font-family:var(--mono);font-size:11px;padding:6px 12px;border-radius:30px;background:color-mix(in srgb,var(--acc) 14%,transparent);color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);white-space:nowrap}
+
+  /* capability */
+  .caps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  @media(max-width:860px){.caps{grid-template-columns:1fr}}
+  .cap{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.25s}
+  .cap:hover{transform:translateY(-4px);border-color:var(--acc);background:var(--panel2)}
+  .cap .ic{flex:0 0 46px;height:46px;border-radius:11px;display:grid;place-items:center;background:color-mix(in srgb,var(--acc) 12%,transparent);border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);color:var(--acc)}
+  .cap h3{font-family:var(--disp);font-size:18px;margin:0 0 4px}
+  .cap .tag{font-family:var(--mono);font-size:10px;letter-spacing:1px;color:var(--acc);text-transform:uppercase}
+  .cap p{color:var(--muted);font-size:13.5px;margin:8px 0 0}
+
+  /* fleet */
+  .fleet{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  @media(max-width:860px){.fleet{grid-template-columns:1fr}}
+  .pcard{background:linear-gradient(180deg,var(--panel),#070c12);border:1px solid var(--line);border-radius:16px;padding:24px;transition:.28s;position:relative;overflow:hidden}
+  .pcard:hover{transform:translateY(-6px);border-color:var(--acc);box-shadow:0 24px 70px -34px var(--acc)}
+  .pcard .top{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+  .pcard h3{font-family:var(--disp);font-size:23px;margin:0}
+  .led{width:9px;height:9px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px var(--acc);animation:pulse2 2s infinite}
+  @keyframes pulse2{50%{opacity:.4}}
+  .stat-tag{margin-left:auto;font-family:var(--mono);font-size:10.5px;color:var(--acc);border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);padding:4px 10px;border-radius:30px;letter-spacing:1px}
+  .pcard .desc{color:var(--muted);font-size:14px;margin:4px 0 18px}
+  .metrics{display:flex;gap:22px;margin-bottom:18px;flex-wrap:wrap}
+  .metrics .m .mn{font-family:var(--disp);font-weight:700;font-size:21px;color:var(--acc)}
+  .metrics .m .ml{font-family:var(--mono);font-size:9.5px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+  .stackbar{font-family:var(--mono);font-size:11.5px;color:var(--muted);background:color-mix(in srgb,var(--acc) 6%,transparent);border:1px solid color-mix(in srgb,var(--acc) 20%,transparent);border-radius:9px;padding:9px 13px;margin-bottom:16px}
+  .stackbar b{color:var(--acc);font-weight:700}
+  .plinks{display:flex;gap:10px;flex-wrap:wrap}
+  .plink{font-family:var(--mono);font-size:12px;color:var(--muted);display:inline-flex;gap:6px;align-items:center;border-bottom:1px solid transparent;transition:.2s}
+  .plink:hover{color:var(--acc);border-color:var(--acc)}
+
+  /* arsenal */
+  .ars{display:flex;flex-direction:column;gap:16px}
+  .arow{display:grid;grid-template-columns:200px 1fr;gap:18px;align-items:center;padding:16px 0;border-bottom:1px solid rgba(27,38,52,.6)}
+  .arow .cat{font-family:var(--mono);font-size:13px;color:var(--green);letter-spacing:.5px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .t{font-family:var(--mono);font-size:12.5px;padding:7px 13px;border-radius:8px;background:var(--panel);border:1px solid var(--line);color:var(--muted);transition:.2s}
+  .t:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
+  @media(max-width:620px){.arow{grid-template-columns:1fr;gap:10px}}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding:70px 0 50px;position:relative;z-index:2}
+  .foot{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end}
+  @media(max-width:700px){.foot{grid-template-columns:1fr}}
+  .foot h2{font-size:clamp(26px,4vw,38px)}
+  .flinks{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .fl{font-family:var(--mono);font-size:13px;border:1px solid var(--line2);padding:10px 16px;border-radius:10px;transition:.22s;display:inline-flex;gap:8px;align-items:center}
+  .fl:hover{transform:translateY(-3px);border-color:var(--green);color:var(--green);box-shadow:0 10px 30px rgba(0,229,153,.18)}
+  .prompt{font-family:var(--mono);font-size:13px;color:var(--dim)}
+  .prompt .g{color:var(--green)} .prompt .cy{color:var(--cyan)}
+  .copy{font-family:var(--mono);font-size:12px;color:var(--dim);margin-top:40px;border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(max-width:860px){.hero{grid-template-columns:1fr;gap:34px;padding-top:48px;min-height:auto}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div class="vignette"></div>
+
+<nav><div class="wrap nav">
+  <div class="brand"><span class="g">ankit</span><span class="d">@</span>systems<span class="d">:~$</span></div>
+  <div class="nav-links">
+    <a href="#impact">impact</a>
+    <a href="#upstream">open-source</a>
+    <a href="#capabilities">capabilities</a>
+    <a href="#fleet">systems</a>
+    <a href="#arsenal">stack</a>
+  </div>
+  <a class="nav-cta" href="https://github.com/The-AnkitPatel" target="_blank" rel="noopener">GitHub ↗</a>
+</div></nav>
+
+<main>
+<header class="wrap hero">
+  <div>
+    <div class="status"><span class="dot"></span> SYSTEM ONLINE — ingesting spans · 99.9% uptime</div>
+    <h1 class="name">ANKIT KUMAR<br><span class="grad">PATEL</span></h1>
+    <div class="role">&gt; <span class="tw" id="tw"></span><span class="cursor"></span></div>
+    <p class="lede">I build production systems that stay up under load — and ship code <b>upstream in the infrastructure that runs the cloud-native world.</b> Distributed telemetry, high-throughput backends, and failure forecasting that pages you <b>before</b> things break.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#upstream">◆ Open-Source Impact</a>
+      <a class="btn ghost" href="#fleet">▸ Flagship Systems</a>
+      <a class="btn ghost" href="https://ankitkumarpatel.netlify.app/" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+    <div class="mini">
+      <span class="chip"><i style="background:var(--green)"></i>700+ users</span>
+      <span class="chip"><i style="background:var(--cyan)"></i>0.14ms inference</span>
+      <span class="chip"><i style="background:var(--amber)"></i>12× p99 ↓</span>
+      <span class="chip"><i style="background:var(--magenta)"></i>CNCF upstream</span>
+    </div>
+  </div>
+
+  <div class="term">
+    <div class="term-bar"><span class="tb" style="background:var(--red)"></span><span class="tb" style="background:var(--amber)"></span><span class="tb" style="background:var(--green)"></span><span>ankit@systems — zsh</span></div>
+    <div class="term-body">
+      <div><span class="k">ankit@systems</span> <span class="c">~/engineering</span></div>
+      <div><span class="c">────────────────────────────</span></div>
+      <div><span class="k">role</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="c">:</span> <span class="v">Systems Engineer · Distributed Backends</span></div>
+      <div><span class="k">focus</span>&nbsp;&nbsp;&nbsp;<span class="c">:</span> <span class="v">Predictive Telemetry · Observability</span></div>
+      <div><span class="k">upstream</span><span class="c">:</span> <span class="cy">CNCF OpenTelemetry · Layer5 / Meshery</span></div>
+      <div><span class="k">edu</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c">:</span> <span class="v">NIT Uttarakhand</span></div>
+      <div><span class="k">status</span>&nbsp;&nbsp;<span class="c">:</span> <span class="am">forecasting failures 5m/15m/30m ahead</span></div>
+      <div class="wf">
+        <div class="wf-row"><span>http.server</span><div class="track"><div class="bar" style="--w:100%;background:var(--green);animation-delay:0s"></div></div></div>
+        <div class="wf-row"><span>auth.verify</span><div class="track"><div class="bar" style="--w:18%;background:var(--cyan);animation-delay:.25s"></div></div></div>
+        <div class="wf-row"><span>db.query</span><div class="track"><div class="bar" style="--w:48%;background:var(--amber);animation-delay:.5s;margin-left:6%"></div></div></div>
+        <div class="wf-row"><span>cache.get</span><div class="track"><div class="bar" style="--w:14%;background:var(--magenta);animation-delay:.7s;margin-left:14%"></div></div></div>
+        <div class="wf-row"><span>otel.export</span><div class="track"><div class="bar" style="--w:28%;background:var(--green);animation-delay:1s;margin-left:62%"></div></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="impact"><div class="wrap">
+  <div class="kicker reveal">// 01 · IMPACT TELEMETRY</div>
+  <h2 class="reveal">Numbers that hold under load.</h2>
+  <p class="sub reveal">Production-grade, measured, and shipped — not slideware.</p>
+  <div class="kpis">
+    <div class="kpi reveal"><div class="n" style="color:var(--green)" data-to="700" data-suf="+">0</div><div class="l">Active users</div><div class="u" style="background:var(--green)"></div></div>
+    <div class="kpi reveal"><div class="n" style="color:var(--cyan)" data-to="99.9" data-suf="%">0</div><div class="l">Uptime SLA</div><div class="u" style="background:var(--cyan)"></div></div>
+    <div class="kpi reveal"><div class="n" style="color:var(--amber)" data-to="0.14" data-suf="ms">0</div><div class="l">Inference</div><div class="u" style="background:var(--amber)"></div></div>
+    <div class="kpi reveal"><div class="n" style="color:var(--magenta)" data-to="12" data-suf="×">0</div><div class="l">p99 latency ↓</div><div class="u" style="background:var(--magenta)"></div></div>
+    <div class="kpi reveal"><div class="n" style="color:var(--indigo)" data-to="84.7" data-suf="%">0</div><div class="l">Terminal-Bench</div><div class="u" style="background:var(--indigo)"></div></div>
+    <div class="kpi reveal"><div class="n" style="color:var(--green)" data-to="4" data-suf="">0</div><div class="l">CNCF · Layer5 PRs</div><div class="u" style="background:var(--green)"></div></div>
+  </div>
+</div></section>
+
+<section id="upstream"><div class="wrap">
+  <div class="kicker reveal">// 02 · OPEN-SOURCE · CNCF &amp; CLOUD-NATIVE</div>
+  <h2 class="reveal">I ship upstream in the cloud-native world.</h2>
+  <p class="sub reveal">Merged into <b>CNCF OpenTelemetry</b> and <b>Layer5 / Meshery</b> — reviewed and signed off by core maintainers. This is code running in the projects that run everyone else's infrastructure.</p>
+  <div class="grid2">
+    <div class="ucard reveal" style="--acc:var(--green)">
+      <div class="org">CNCF · OpenTelemetry</div>
+      <div class="repo">opentelemetry-go-contrib <span class="pill">✓ Approved · Core Maintainer</span></div>
+      <p>Fixed HTTP 3xx middleware status-code propagation in AWS SDK v2 tracing instrumentation, plus OTLP endpoint validation — correctness in the traces every CNCF user depends on.</p>
+      <div class="prs">
+        <a class="pr" href="https://github.com/open-telemetry/opentelemetry-go-contrib/pull/10077" target="_blank" rel="noopener">◆ PR #10077</a>
+        <a class="pr" href="https://github.com/open-telemetry/opentelemetry-go-contrib/pull/10076" target="_blank" rel="noopener">◆ PR #10076</a>
+      </div>
+    </div>
+    <div class="ucard reveal" style="--acc:var(--magenta)">
+      <div class="org">Layer5 · CNCF</div>
+      <div class="repo">gowrk2 <span class="pill">✓ Merged to master</span></div>
+      <p>High-performance HTTP benchmarking engine powering load tooling inside Meshery, the CNCF service-mesh management plane.</p>
+      <div class="prs"><a class="pr" href="https://github.com/layer5io/gowrk2/pull/26" target="_blank" rel="noopener">◆ PR #26</a></div>
+    </div>
+    <div class="ucard reveal" style="--acc:var(--cyan)">
+      <div class="org">Layer5 · CNCF</div>
+      <div class="repo">mesheryctl-aliases <span class="pill">✓ Merged to master</span></div>
+      <p>CLI ergonomics and issue-discovery pipelines that make <code>mesheryctl</code> faster to live in for every Meshery operator.</p>
+      <div class="prs"><a class="pr" href="https://github.com/layer5io/mesheryctl-aliases/pull/22" target="_blank" rel="noopener">◆ PR #22</a></div>
+    </div>
+    <div class="ucard reveal" style="--acc:var(--indigo)">
+      <div class="org">Layer5 · CNCF</div>
+      <div class="repo">layer5 <span class="pill">✓ All checks passed</span></div>
+      <p>Official community-member profile — a recognized contributor in the Layer5 / CNCF cloud-native ecosystem.</p>
+      <div class="prs"><a class="pr" href="https://github.com/layer5io/layer5/pull/8276" target="_blank" rel="noopener">◆ PR #8276</a></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="capabilities"><div class="wrap">
+  <div class="kicker reveal">// 03 · CAPABILITY MATRIX</div>
+  <h2 class="reveal">What I engineer.</h2>
+  <p class="sub reveal">Four domains, one discipline: observe everything, predict the failure, keep it up.</p>
+  <div class="caps">
+    <div class="cap reveal" style="--acc:var(--green)"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18l5-8 4 5 3-6 6 9"/></svg></div><div><div class="tag">Predict the failure before it pages you</div><h3>Distributed Telemetry &amp; Prediction</h3><p>Multi-horizon failure forecasting (5m · 15m · 30m), TreeSHAP attributions, Isotonic Calibration, Conformal Prediction, OpenTelemetry pipelines.</p></div></div>
+    <div class="cap reveal" style="--acc:var(--cyan)"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6l5 5-5 5M12 18h8"/></svg></div><div><div class="tag">Agents that ship real code</div><h3>Autonomous Agent Runtimes</h3><p>Terminal-native code-editing engines, LSP + AST parsing, sandboxed CI/CD, multi-provider LLM orchestration — Anthropic · OpenAI · Gemini · Ollama.</p></div></div>
+    <div class="cap reveal" style="--acc:var(--amber)"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6"/></svg></div><div><div class="tag">ACID under peak load</div><h3>High-Throughput Backends</h3><p>ACID seat/gatepass allocation, PostgreSQL RLS + <code>SELECT FOR UPDATE</code>, POSIX sockets, Redis, Celery queues, FastAPI, NestJS, gRPC.</p></div></div>
+    <div class="cap reveal" style="--acc:var(--magenta)"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h.01M5 13a10 10 0 0114 0M8.5 16.5a5 5 0 017 0"/></svg></div><div><div class="tag">Live cockpits, zero lag</div><h3>Mission-Critical Client Systems</h3><p>React 19 incident-response cockpits, low-latency live telemetry streams, TypeScript, offline-resilient local sync, responsive real-time UI.</p></div></div>
+  </div>
+</div></section>
+
+<section id="fleet"><div class="wrap">
+  <div class="kicker reveal">// 04 · PRODUCTION FLEET</div>
+  <h2 class="reveal">Flagship systems in production.</h2>
+  <p class="sub reveal">Real users, real traffic, numbers that hold. <b>Four</b> systems shipped end-to-end.</p>
+  <div class="fleet">
+    <div class="pcard reveal" style="--acc:var(--green)">
+      <div class="top"><span class="led"></span><h3>LeaveDesk</h3><span class="stat-tag">PROD</span></div>
+      <div class="desc">Campus gatepass + perimeter-security engine, live on NIT Uttarakhand servers.</div>
+      <div class="metrics"><div class="m"><div class="mn">700+</div><div class="ml">Active users</div></div><div class="m"><div class="mn">99.9%</div><div class="ml">Uptime</div></div><div class="m"><div class="mn">3-tier</div><div class="ml">Approval flow</div></div></div>
+      <div class="stackbar"><b>▸</b> PostgreSQL 16 · Node.js · TypeScript · React 19 · SSE · Docker · Nginx</div>
+      <div class="plinks"><a class="plink" href="https://leavedesk.nituk.ac.in" target="_blank" rel="noopener">◆ Live site ↗</a><span class="plink">ACID row-level locks</span></div>
+    </div>
+    <div class="pcard reveal" style="--acc:var(--cyan)">
+      <div class="top"><span class="led"></span><h3>NetPredict</h3><span class="stat-tag">LIVE</span></div>
+      <div class="desc">Forecasts link failure 5–30 min before packet loss hits throughput.</div>
+      <div class="metrics"><div class="m"><div class="mn">0.14ms</div><div class="ml">Inference</div></div><div class="m"><div class="mn">5–30m</div><div class="ml">Horizon</div></div><div class="m"><div class="mn">XAI</div><div class="ml">TreeSHAP root-cause</div></div></div>
+      <div class="stackbar"><b>▸</b> Python 3.12 · FastAPI · LightGBM · TreeSHAP · Conformal · React 19</div>
+      <div class="plinks"><a class="plink" href="https://netpredict-cockpit.vercel.app" target="_blank" rel="noopener">◆ Live cockpit ↗</a><a class="plink" href="https://huggingface.co/datasets/The-AnkitPatel/ebpf-network-telemetry" target="_blank" rel="noopener">◆ HF dataset ↗</a></div>
+    </div>
+    <div class="pcard reveal" style="--acc:var(--magenta)">
+      <div class="top"><span class="led"></span><h3>Agav</h3><span class="stat-tag">OSS</span></div>
+      <div class="desc">Terminal-native autonomous agent for real multi-file codebases.</div>
+      <div class="metrics"><div class="m"><div class="mn">84.7%</div><div class="ml">Terminal-Bench 2.1</div></div><div class="m"><div class="mn">5</div><div class="ml">LLM providers</div></div><div class="m"><div class="mn">CI</div><div class="ml">Non-interactive</div></div></div>
+      <div class="stackbar"><b>▸</b> Python · TypeScript · Linux PTY · AST · Docker · Multi-LLM tooling</div>
+      <div class="plinks"><a class="plink" href="https://github.com/prapaa-ai/agav" target="_blank" rel="noopener">◆ Repository ↗</a><span class="plink">SWE-bench Live</span></div>
+    </div>
+    <div class="pcard reveal" style="--acc:var(--amber)">
+      <div class="top"><span class="led"></span><h3>HimRide</h3><span class="stat-tag">GOV</span></div>
+      <div class="desc">High-concurrency state transit booking + dispatch · Govt. of Uttarakhand.</div>
+      <div class="metrics"><div class="m"><div class="mn">12×</div><div class="ml">p99 latency ↓</div></div><div class="m"><div class="mn">3×</div><div class="ml">Throughput ↑</div></div><div class="m"><div class="mn">695/s</div><div class="ml">Settlements</div></div></div>
+      <div class="stackbar"><b>▸</b> NestJS · PostgreSQL · Redis Pub/Sub · Uber H3 · Expo · Docker</div>
+      <div class="plinks"><span class="plink">Append-only ledger</span><span class="plink">1.8s → 146ms p99</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="arsenal"><div class="wrap">
+  <div class="kicker reveal">// 05 · TECH ARSENAL</div>
+  <h2 class="reveal">The stack behind it.</h2>
+  <div class="ars">
+    <div class="arow reveal"><div class="cat">Languages</div><div class="tags"><span class="t">Go</span><span class="t">C++20</span><span class="t">Python 3.12</span><span class="t">TypeScript</span><span class="t">JavaScript</span><span class="t">SQL</span><span class="t">Bash</span></div></div>
+    <div class="arow reveal"><div class="cat">Telemetry &amp; ML</div><div class="tags"><span class="t">OpenTelemetry</span><span class="t">LightGBM</span><span class="t">TreeSHAP</span><span class="t">Conformal Prediction</span><span class="t">Isotonic Calibration</span><span class="t">PyTorch</span><span class="t">Pandas</span></div></div>
+    <div class="arow reveal"><div class="cat">Backend &amp; Cloud</div><div class="tags"><span class="t">NestJS</span><span class="t">FastAPI</span><span class="t">Node.js</span><span class="t">PostgreSQL 16</span><span class="t">Redis</span><span class="t">Docker</span><span class="t">Nginx</span><span class="t">gRPC</span></div></div>
+    <div class="arow reveal"><div class="cat">Frontend &amp; Cockpits</div><div class="tags"><span class="t">React 19</span><span class="t">Next.js</span><span class="t">TypeScript</span><span class="t">Tailwind</span><span class="t">Vite</span><span class="t">Recharts</span></div></div>
+    <div class="arow reveal"><div class="cat">Systems &amp; DevOps</div><div class="tags"><span class="t">Linux Internals</span><span class="t">POSIX Sockets</span><span class="t">GitHub Actions</span><span class="t">Grafana</span><span class="t">GDB</span><span class="t">strace</span><span class="t">Playwright</span></div></div>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="foot">
+    <div>
+      <div class="kicker">// LET'S BUILD</div>
+      <h2>Need someone who ships systems that don't fall over?</h2>
+      <div class="flinks">
+        <a class="fl" href="https://github.com/The-AnkitPatel" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="fl" href="https://www.linkedin.com/in/the-ankitkumarpatel/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="fl" href="mailto:ankitkumarpatel357@gmail.com">Email ↗</a>
+        <a class="fl" href="https://leetcode.com/u/theankitpatel/" target="_blank" rel="noopener">LeetCode ↗</a>
+        <a class="fl" href="https://huggingface.co/The-AnkitPatel" target="_blank" rel="noopener">Hugging Face ↗</a>
+      </div>
+    </div>
+    <div class="prompt"><span class="g">ankit@systems</span> <span class="cy">~</span> $ <span id="fcursor">_</span></div>
+  </div>
+  <div class="copy"><span>Ankit Kumar Patel · Systems Engineer · NIT Uttarakhand</span><span>traced all the way down · 🟢</span></div>
+</div></footer>
+
+<script>
+(function(){
+  // typewriter
+  var phrases=['Systems Engineer','Distributed Backends','Predictive Telemetry','CNCF OpenTelemetry Contributor'];
+  var tw=document.getElementById('tw'),pi=0,ci=0,del=false;
+  function type(){var w=phrases[pi];tw.textContent=w.slice(0,ci);if(!del){if(ci<w.length){ci++;setTimeout(type,70);}else{del=true;setTimeout(type,1500);}}else{if(ci>0){ci--;setTimeout(type,34);}else{del=false;pi=(pi+1)%phrases.length;setTimeout(type,260);}}}
+  type();
+
+  // footer cursor blink
+  setInterval(function(){var c=document.getElementById('fcursor');if(c)c.style.opacity=c.style.opacity==='0'?'1':'0';},530);
+
+  // counters
+  function animate(el){var to=parseFloat(el.dataset.to),suf=el.dataset.suf||'',dec=(to%1!==0),start=null,dur=1400;
+    function step(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1);var e=1-Math.pow(1-p,3);var val=to*e;el.textContent=(dec?val.toFixed(2):Math.round(val))+suf;if(p<1)requestAnimationFrame(step);else el.textContent=(dec?to.toFixed(to===99.9||to===84.7?1:2):to)+suf;}
+    requestAnimationFrame(step);}
+
+  // reveal + counter trigger (scroll-based + guaranteed fallback = never blank)
+  function kick(el){el.classList.add('in');var num=el.querySelector&&el.querySelector('.n[data-to]');if(el.matches('.kpi')&&num&&!num.dataset.done){num.dataset.done=1;animate(num);}}
+  function reveal(){var vh=innerHeight;document.querySelectorAll('.reveal:not(.in)').forEach(function(el){if(el.getBoundingClientRect().top<vh*0.92)kick(el);});}
+  addEventListener('scroll',reveal,{passive:true});addEventListener('resize',reveal);addEventListener('load',reveal);
+  reveal();setTimeout(reveal,500);
+  setTimeout(function(){document.querySelectorAll('.reveal:not(.in)').forEach(kick);},2600);
+
+  // canvas mesh background
+  var cv=document.getElementById('bg'),cx=cv.getContext('2d'),W,H,pts,DPR=Math.min(window.devicePixelRatio||1,2);
+  function resize(){W=cv.width=innerWidth*DPR;H=cv.height=innerHeight*DPR;cv.style.width=innerWidth+'px';cv.style.height=innerHeight+'px';var n=Math.min(70,Math.floor(innerWidth/22));pts=[];for(var i=0;i<n;i++){pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22*DPR,vy:(Math.random()-.5)*.22*DPR});}}
+  resize();addEventListener('resize',resize);
+  function draw(){cx.clearRect(0,0,W,H);
+    for(var i=0;i<pts.length;i++){var p=pts[i];p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;}
+    for(var i=0;i<pts.length;i++){for(var j=i+1;j<pts.length;j++){var a=pts[i],b=pts[j],dx=a.x-b.x,dy=a.y-b.y,d=Math.sqrt(dx*dx+dy*dy),max=150*DPR;if(d<max){cx.globalAlpha=(1-d/max)*.5;cx.strokeStyle='#15707a';cx.lineWidth=1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke();}}}
+    cx.globalAlpha=.9;for(var i=0;i<pts.length;i++){var p=pts[i];cx.fillStyle=i%7===0?'#38BDF8':'#00E599';cx.beginPath();cx.arc(p.x,p.y,1.6*DPR,0,6.28);cx.fill();}
+    requestAnimationFrame(draw);}
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches)draw();
+})();
+</script>
+</body>
+</html>
