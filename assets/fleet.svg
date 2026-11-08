@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" width="1200" height="580" font-family="'JetBrains Mono','SF Mono',ui-monospace,Consolas,monospace" role="img" aria-label="Production flagship systems">
+  <defs>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0C131B"/><stop offset="1" stop-color="#090D13"/></linearGradient>
+  </defs>
+
+  <!-- ============ CARD 1 · LeaveDesk (green) ============ -->
+  <g>
+    <rect x="16" y="16" width="572" height="262" rx="12" fill="url(#cardbg)" stroke="#00E599" stroke-opacity="0.3"/>
+    <rect x="30" y="32" width="4" height="230" rx="2" fill="#00E599"/>
+    <text x="48" y="58" fill="#E6FBF4" font-size="21" font-weight="700">LeaveDesk</text>
+    <rect x="486" y="40" width="86" height="22" rx="11" fill="#00E599" fill-opacity="0.12" stroke="#00E599" stroke-opacity="0.4"/>
+    <circle cx="502" cy="51" r="3" fill="#00E599"><animate attributeName="opacity" dur="1.8s" repeatCount="indefinite" values="1;0.3;1"/></circle>
+    <text x="512" y="55" fill="#00E599" font-size="11" font-weight="600">PROD</text>
+    <text x="48" y="82" fill="#9FB3C8" font-size="12.5">Campus gatepass + perimeter security, live on university servers.</text>
+    <g>
+      <text x="48" y="128" fill="#00E599" font-size="21" font-weight="700">700+</text><text x="48" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">ACTIVE USERS</text>
+      <text x="226" y="128" fill="#00E599" font-size="21" font-weight="700">99.9%</text><text x="226" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">UPTIME</text>
+      <text x="404" y="128" fill="#00E599" font-size="21" font-weight="700">3-TIER</text><text x="404" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">APPROVAL FLOW</text>
+    </g>
+    <rect x="44" y="166" width="528" height="30" rx="8" fill="#00E599" fill-opacity="0.06" stroke="#00E599" stroke-opacity="0.2"/>
+    <text x="58" y="185" font-size="11"><tspan fill="#00E599">▸ </tspan><tspan fill="#9FB3C8">PostgreSQL 16 · Node.js · TypeScript · React 19 · SSE · Docker</tspan></text>
+    <line x1="44" y1="214" x2="572" y2="214" stroke="#17222E"/>
+    <circle cx="50" cy="234" r="3" fill="#00E599"/><text x="62" y="238" fill="#5B6B7E" font-size="11">operational · leavedesk.nituk.ac.in · ACID row-level locks</text>
+  </g>
+
+  <!-- ============ CARD 2 · NetPredict (cyan) ============ -->
+  <g>
+    <rect x="612" y="16" width="572" height="262" rx="12" fill="url(#cardbg)" stroke="#38BDF8" stroke-opacity="0.3"/>
+    <rect x="626" y="32" width="4" height="230" rx="2" fill="#38BDF8"/>
+    <text x="644" y="58" fill="#E6FBF4" font-size="21" font-weight="700">NetPredict</text>
+    <rect x="1082" y="40" width="86" height="22" rx="11" fill="#38BDF8" fill-opacity="0.12" stroke="#38BDF8" stroke-opacity="0.4"/>
+    <circle cx="1098" cy="51" r="3" fill="#38BDF8"><animate attributeName="opacity" dur="1.8s" repeatCount="indefinite" values="1;0.3;1"/></circle>
+    <text x="1108" y="55" fill="#38BDF8" font-size="11" font-weight="600">LIVE</text>
+    <text x="644" y="82" fill="#9FB3C8" font-size="12.5">Forecasts link failure 5–30 min before packet loss hits throughput.</text>
+    <g>
+      <text x="644" y="128" fill="#38BDF8" font-size="21" font-weight="700">0.14ms</text><text x="644" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">INFERENCE</text>
+      <text x="822" y="128" fill="#38BDF8" font-size="21" font-weight="700">5–30m</text><text x="822" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">FORECAST HORIZON</text>
+      <text x="1000" y="128" fill="#38BDF8" font-size="21" font-weight="700">XAI</text><text x="1000" y="146" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">TreeSHAP ROOT-CAUSE</text>
+    </g>
+    <rect x="640" y="166" width="528" height="30" rx="8" fill="#38BDF8" fill-opacity="0.06" stroke="#38BDF8" stroke-opacity="0.2"/>
+    <text x="654" y="185" font-size="11"><tspan fill="#38BDF8">▸ </tspan><tspan fill="#9FB3C8">Python 3.12 · FastAPI · LightGBM · TreeSHAP · Conformal · React 19</tspan></text>
+    <line x1="640" y1="214" x2="1168" y2="214" stroke="#17222E"/>
+    <circle cx="646" cy="234" r="3" fill="#38BDF8"/><text x="658" y="238" fill="#5B6B7E" font-size="11">live cockpit · Hugging Face dataset published</text>
+  </g>
+
+  <!-- ============ CARD 3 · Agav (magenta) ============ -->
+  <g>
+    <rect x="16" y="302" width="572" height="262" rx="12" fill="url(#cardbg)" stroke="#F472B6" stroke-opacity="0.3"/>
+    <rect x="30" y="318" width="4" height="230" rx="2" fill="#F472B6"/>
+    <text x="48" y="344" fill="#E6FBF4" font-size="21" font-weight="700">Agav</text>
+    <rect x="486" y="326" width="86" height="22" rx="11" fill="#F472B6" fill-opacity="0.12" stroke="#F472B6" stroke-opacity="0.4"/>
+    <circle cx="502" cy="337" r="3" fill="#F472B6"><animate attributeName="opacity" dur="1.8s" repeatCount="indefinite" values="1;0.3;1"/></circle>
+    <text x="512" y="341" fill="#F472B6" font-size="11" font-weight="600">OSS</text>
+    <text x="48" y="368" fill="#9FB3C8" font-size="12.5">Terminal-native autonomous agent for real multi-file codebases.</text>
+    <g>
+      <text x="48" y="414" fill="#F472B6" font-size="21" font-weight="700">84.7%</text><text x="48" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">TERMINAL-BENCH 2.1</text>
+      <text x="226" y="414" fill="#F472B6" font-size="21" font-weight="700">5</text><text x="226" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">LLM PROVIDERS</text>
+      <text x="404" y="414" fill="#F472B6" font-size="21" font-weight="700">CI</text><text x="404" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">NON-INTERACTIVE</text>
+    </g>
+    <rect x="44" y="452" width="528" height="30" rx="8" fill="#F472B6" fill-opacity="0.06" stroke="#F472B6" stroke-opacity="0.2"/>
+    <text x="58" y="471" font-size="11"><tspan fill="#F472B6">▸ </tspan><tspan fill="#9FB3C8">Python · TypeScript · Linux PTY · AST · Docker · Multi-LLM Tooling</tspan></text>
+    <line x1="44" y1="500" x2="572" y2="500" stroke="#17222E"/>
+    <circle cx="50" cy="520" r="3" fill="#F472B6"/><text x="62" y="524" fill="#5B6B7E" font-size="11">open-source · github.com/prapaa-ai/agav</text>
+  </g>
+
+  <!-- ============ CARD 4 · HimRide (amber) ============ -->
+  <g>
+    <rect x="612" y="302" width="572" height="262" rx="12" fill="url(#cardbg)" stroke="#FBBF24" stroke-opacity="0.3"/>
+    <rect x="626" y="318" width="4" height="230" rx="2" fill="#FBBF24"/>
+    <text x="644" y="344" fill="#E6FBF4" font-size="21" font-weight="700">HimRide</text>
+    <rect x="1082" y="326" width="86" height="22" rx="11" fill="#FBBF24" fill-opacity="0.12" stroke="#FBBF24" stroke-opacity="0.4"/>
+    <circle cx="1098" cy="337" r="3" fill="#FBBF24"><animate attributeName="opacity" dur="1.8s" repeatCount="indefinite" values="1;0.3;1"/></circle>
+    <text x="1108" y="341" fill="#FBBF24" font-size="11" font-weight="600">GOV</text>
+    <text x="644" y="368" fill="#9FB3C8" font-size="12.5">High-concurrency transit booking + dispatch at state scale.</text>
+    <g>
+      <text x="644" y="414" fill="#FBBF24" font-size="21" font-weight="700">12×</text><text x="644" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">p99 LATENCY ↓</text>
+      <text x="822" y="414" fill="#FBBF24" font-size="21" font-weight="700">3×</text><text x="822" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">THROUGHPUT ↑</text>
+      <text x="1000" y="414" fill="#FBBF24" font-size="21" font-weight="700">695/s</text><text x="1000" y="432" fill="#7D8BA1" font-size="9.5" letter-spacing="0.5">SETTLEMENTS</text>
+    </g>
+    <rect x="640" y="452" width="528" height="30" rx="8" fill="#FBBF24" fill-opacity="0.06" stroke="#FBBF24" stroke-opacity="0.2"/>
+    <text x="654" y="471" font-size="11"><tspan fill="#FBBF24">▸ </tspan><tspan fill="#9FB3C8">NestJS · PostgreSQL · Redis Pub/Sub · Uber H3 · Expo · Docker</tspan></text>
+    <line x1="640" y1="500" x2="1168" y2="500" stroke="#17222E"/>
+    <circle cx="646" cy="520" r="3" fill="#FBBF24"/><text x="658" y="524" fill="#5B6B7E" font-size="11">production · Govt. of Uttarakhand transit · append-only ledger</text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" width="1200" height="150" font-family="'JetBrains Mono','SF Mono',ui-monospace,Consolas,monospace" role="img" aria-label="Impact telemetry — headline metrics">
+  <defs>
+    <linearGradient id="kbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C121A"/><stop offset="1" stop-color="#080C12"/></linearGradient>
+    <pattern id="kgrid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#101824" stroke-width="1"/></pattern>
+  </defs>
+  <rect x="2" y="2" width="1196" height="146" rx="12" fill="url(#kbg)" stroke="#1B2634"/>
+  <rect x="2" y="2" width="1196" height="146" rx="12" fill="url(#kgrid)" opacity="0.5"/>
+
+  <circle cx="26" cy="26" r="4" fill="#00E599"><animate attributeName="opacity" dur="1.6s" repeatCount="indefinite" values="1;0.3;1"/></circle>
+  <text x="40" y="30" fill="#00E599" font-size="12" font-weight="700" letter-spacing="2">IMPACT TELEMETRY</text>
+  <text x="196" y="30" fill="#39465A" font-size="11" letter-spacing="1">// production-grade · measured · shipped</text>
+  <text x="1176" y="30" fill="#39465A" font-size="11" text-anchor="end">realtime ●</text>
+  <line x1="24" y1="44" x2="1176" y2="44" stroke="#17222E"/>
+
+  <!-- dividers -->
+  <g stroke="#17222E" stroke-width="1">
+    <line x1="216" y1="60" x2="216" y2="128"/>
+    <line x1="408" y1="60" x2="408" y2="128"/>
+    <line x1="600" y1="60" x2="600" y2="128"/>
+    <line x1="792" y1="60" x2="792" y2="128"/>
+    <line x1="984" y1="60" x2="984" y2="128"/>
+  </g>
+
+  <!-- tiles: number + accent underline + label -->
+  <g text-anchor="middle">
+    <g><text x="120" y="98" fill="#00E599" font-size="36" font-weight="700">700+</text><rect x="96" y="108" width="48" height="2.5" rx="1" fill="#00E599"/><text x="120" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">PROD USERS</text></g>
+    <g><text x="312" y="98" fill="#38BDF8" font-size="36" font-weight="700">99.9%</text><rect x="288" y="108" width="48" height="2.5" rx="1" fill="#38BDF8"/><text x="312" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">UPTIME SLA</text></g>
+    <g><text x="504" y="98" fill="#FBBF24" font-size="36" font-weight="700">0.14ms</text><rect x="480" y="108" width="48" height="2.5" rx="1" fill="#FBBF24"/><text x="504" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">INFERENCE</text></g>
+    <g><text x="696" y="98" fill="#F472B6" font-size="36" font-weight="700">12×</text><rect x="672" y="108" width="48" height="2.5" rx="1" fill="#F472B6"/><text x="696" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">p99 LATENCY ↓</text></g>
+    <g><text x="888" y="98" fill="#818CF8" font-size="36" font-weight="700">84.7%</text><rect x="864" y="108" width="48" height="2.5" rx="1" fill="#818CF8"/><text x="888" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">TERMINAL-BENCH</text></g>
+    <g><text x="1080" y="98" fill="#00E599" font-size="36" font-weight="700">4</text><rect x="1056" y="108" width="48" height="2.5" rx="1" fill="#00E599"/><text x="1080" y="130" fill="#8EA2B6" font-size="11" letter-spacing="1">CNCF · LAYER5 PRs</text></g>
+  </g>
+
+  <!-- sweep -->
+  <rect y="46" width="2" height="82" fill="#00E599" opacity="0.14"><animate attributeName="x" dur="5s" repeatCount="indefinite" keyTimes="0;0.9;1" values="24;1174;24"/></rect>
+</svg>
